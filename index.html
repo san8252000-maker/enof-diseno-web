@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Diseño Web |Profesora Sandra Soto  | ENOF Cabildo</title>
+
+    <meta
+        name="description"
+        content="Curso de Diseño Web - ENOF Sede Cabildo"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVEGACIÓN
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-symbol">&lt;/&gt;</span>
+            <div>
+                <strong>ENOF</strong>
+                <small>DISEÑO WEB-Profesora Sandra Soto</small>
+            </div>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <nav id="mainNav">
+            <a href="#inicio">Inicio</a>
+            <a href="#clases">Clases</a>
+            <a href="#recursos">Recursos</a>
+            <a href="#conceptos">Conceptos</a>
+            <a href="#proyecto">Proyecto</a>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-decoration decoration-one"></div>
+            <div class="hero-decoration decoration-two"></div>
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    ENOF · SEDE CABILDO
+                </span>
+
+                <h1>
+                    Diseñamos.<br>
+                    <span>Programamos.</span><br>
+                    Creamos.
+                </h1>
+
+                <p class="hero-description">
+                    Un recorrido para aprender a crear páginas web
+                    desde cero, explorando HTML, CSS, JavaScript,
+                    diseño, creatividad y resolución de problemas.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#clases" class="btn btn-primary">
+                        Ver las clases →
+                    </a>
+
+                    <a href="#recursos" class="btn btn-secondary">
+                        Explorar recursos
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="code-window">
+
+                <div class="window-header">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <small>mi-pagina.html</small>
+                </div>
+
+                <pre><code><span class="tag">&lt;html&gt;</span>
+
+  <span class="tag">&lt;body&gt;</span>
+
+    <span class="tag">&lt;h1&gt;</span>
+      ¡Hola, mundo!
+    <span class="tag">&lt;/h1&gt;</span>
+
+    <span class="tag">&lt;p&gt;</span>
+      Estoy aprendiendo
+      a crear sitios web.
+    <span class="tag">&lt;/p&gt;</span>
+
+  <span class="tag">&lt;/body&gt;</span>
+
+<span class="tag">&lt;/html&gt;</span></code></pre>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PRESENTACIÓN
+        ========================== -->
+
+        <section class="intro section">
+
+            <div class="section-label">01 · EL CURSO</div>
+
+            <div class="intro-grid">
+
+                <div>
+                    <h2>
+                        Del código<br>
+                        <span>a la web.</span>
+                    </h2>
+                </div>
+
+                <div>
+                    <p>
+                        Durante este curso vamos a descubrir cómo se
+                        construye una página web. Vamos a comenzar por
+                        la estructura con <strong>HTML</strong>, para luego
+                        incorporar diseño, estilos, interacción y proyectos
+                        propios.
+                    </p>
+
+                    <p>
+                        La propuesta combina programación, diseño,
+                        creatividad, colaboración y resolución de problemas.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CLASES
+        ========================== -->
+
+        <section id="clases" class="section classes-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <div class="section-label">02 · RECORRIDO</div>
+
+                    <h2>
+                        Las clases
+                    </h2>
+                </div>
+
+                <p>
+                    Un recorrido paso a paso para transformar
+                    ideas en páginas web.
+                </p>
+
+            </div>
+
+
+            <div class="classes-grid">
+
+                <!-- CLASE 1 -->
+
+                <article class="class-card">
+
+                    <div class="class-number">01</div>
+
+                    <div class="class-icon">🌐</div>
+
+                    <span class="class-tag html-tag">
+                        HTML
+                    </span>
+
+                    <h3>
+                        Primeros pasos en la Web
+                    </h3>
+
+                    <p>
+                        ¿Qué es HTML? Conocemos la estructura básica
+                        de una página web y comenzamos a escribir
+                        nuestro primer documento.
+                    </p>
+
+                    <div class="class-topics">
+
+                        <span>&lt;html&gt;</span>
+                        <span>&lt;head&gt;</span>
+                        <span>&lt;body&gt;</span>
+                        <span>&lt;p&gt;</span>
+
+                    </div>
+
+                    <button
+                        class="class-button"
+                        onclick="mostrarClase(1)"
+                    >
+                        Ver clase →
+                    </button>
+
+                </article>
+
+
+                <!-- CLASE 2 -->
+
+                <article class="class-card featured">
+
+                    <div class="class-number">02</div>
+
+                    <div class="class-icon">🧩</div>
+
+                    <span class="class-tag html-tag">
+                        HTML
+                    </span>
+
+                    <h3>
+                        Encabezados y listas
+                    </h3>
+
+                    <p>
+                        Organizamos la información utilizando títulos,
+                        subtítulos, párrafos y diferentes tipos de listas.
+                    </p>
+
+                    <div class="class-topics">
+
+                        <span>&lt;h1&gt;</span>
+                        <span>&lt;ul&gt;</span>
+                        <span>&lt;ol&gt;</span>
+                        <span>&lt;li&gt;</span>
+
+                    </div>
+
+                    <button
+                        class="class-button"
+                        onclick="mostrarClase(2)"
+                    >
+                        Ver clase →
+                    </button>
+
+                </article>
+
+
+                <!-- CLASE 3 
+
+                <article class="class-card coming-soon">
+
+                    <div class="class-number">03</div>
+
+                    <div class="class-icon">🎨</div>
+
+                    <span class="class-tag css-tag">
+                        PRÓXIMAMENTE
+                    </span>
+
+                    <h3>
+                        Próxima clase
+                    </h3>
+
+                    <p>
+                        Este espacio se completará cuando incorporemos
+                        el contenido de la próxima clase.
+                    </p>
+
+                    <div class="class-topics">
+                        <span>En construcción...</span>
+                    </div>
+
+                </article>-->
+
+
+                <!-- CLASE 5 -->
+
+                <article class="class-card project-card">
+
+                    <div class="class-number">05</div>
+
+                    <div class="class-icon">🚀</div>
+
+                    <span class="class-tag project-tag">
+                        PROYECTO
+                    </span>
+
+                    <h3>
+                        Miniproyecto: Página Web HTML
+                    </h3>
+
+                    <p>
+                        Aplicamos lo aprendido para diseñar y crear
+                        una página web pensada para un usuario.
+                    </p>
+
+                    <div class="class-topics">
+
+                        <span>Definir</span>
+                        <span>Diseñar</span>
+                        <span>Crear</span>
+                        <span>Reflexionar</span>
+
+                    </div>
+
+                    <button
+                        class="class-button"
+                        onclick="mostrarClase(5)"
+                    >
+                        Ver proyecto →
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+<!-- CLASE 6 -->
+
+<article class="class-card">
+
+    <div class="class-number">06</div>
+
+    <div class="class-icon">🎨</div>
+
+    <span class="class-tag css-tag">
+        CSS
+    </span>
+
+    <h3>
+        Dar estilo al texto con CSS
+    </h3>
+
+    <p>
+        Descubrimos cómo CSS permite cambiar la apariencia
+        de los elementos HTML y comenzar a darle estilo
+        a nuestras páginas web.
+    </p>
+
+    <div class="class-topics">
+
+        <span>color</span>
+        <span>font-family</span>
+        <span>font-size</span>
+        <span>text-align</span>
+
+    </div>
+
+    <button
+        class="class-button"
+        onclick="mostrarClase(6)"
+    >
+        Ver clase →
+    </button>
+
+</article>
+
+        <!-- =========================
+             PREGUNTA DEL CURSO
+        ========================== -->
+
+        <section class="question-section">
+
+            <div class="question-mark">?</div>
+
+            <div>
+                <span class="section-label">
+                    UNA PREGUNTA PARA PENSAR
+                </span>
+
+                <h2>
+                    ¿Cómo podemos usar el código
+                    para comunicar nuestras ideas?
+                </h2>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONCEPTOS
+        ========================== -->
+
+        <section id="conceptos" class="section concepts-section">
+
+            <div class="section-label">
+                03 · VOCABULARIO
+            </div>
+
+            <h2>
+                Palabras que vamos<br>
+                a empezar a conocer.
+            </h2>
+
+
+            <div class="concepts-grid">
+
+                <article class="concept">
+                    <span class="concept-icon">🌐</span>
+                    <h3>HTML</h3>
+                    <p>
+                        Lenguaje de marcado utilizado para crear
+                        y estructurar páginas web.
+                    </p>
+                </article>
+
+                <article class="concept">
+                    <span class="concept-icon">&lt;/&gt;</span>
+                    <h3>Etiqueta</h3>
+                    <p>
+                        Conjunto de caracteres que indica el inicio
+                        y el final de un elemento HTML.
+                    </p>
+                </article>
+
+                <article class="concept">
+                    <span class="concept-icon">🧱</span>
+                    <h3>Elemento</h3>
+                    <p>
+                        Parte de una página web formada por etiquetas
+                        y contenido.
+                    </p>
+                </article>
+
+                <article class="concept">
+                    <span class="concept-icon">🗂️</span>
+                    <h3>Estructura</h3>
+                    <p>
+                        Forma en que se organiza el contenido
+                        de un sitio web.
+                    </p>
+                </article>
+
+                <article class="concept">
+                    <span class="concept-icon">✏️</span>
+                    <h3>Contenido</h3>
+                    <p>
+                        Textos, imágenes y otros elementos que
+                        forman parte de una página.
+                    </p>
+                </article>
+
+                <article class="concept">
+                    <span class="concept-icon">🐞</span>
+                    <h3>Debugging</h3>
+                    <p>
+                        Proceso de encontrar y solucionar errores
+                        en nuestro código.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             RECURSOS
+        ========================== -->
+      <div style="padding: 20px; text-align: center;">
+    <p>
+    <a href="https://studio.code.org">
+        ABRIR CODE.ORG
+    </a>
+</p>
+</div>
+
+        <section id="recursos" class="section resources-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <div class="section-label">
+                        04 · CAJA DE HERRAMIENTAS
+                    </div>
+
+                    <h2>
+                        Recursos
+                    </h2>
+                </div>
+
+                <p>
+                    Materiales para aprender, consultar,
+                    practicar y crear.
+                </p>
+
+            </div>
+
+
+            <div class="resources-grid">
+
+               <a
+    href="https://www.google.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="resource-card"
+>
+    <span>🌐</span>
+    <div>
+        <h3>PRUEBA</h3>
+        <p>Hacé clic para probar el enlace</p>
+    </div>
+    <strong>↗</strong>
+</a>
+
+
+                <a
+                    href="https://forum.code.org/t/resource-hub-web-development-chapter-1/36190"
+                    target="_blank"
+                    class="resource-card"
+                >
+                    <span>👩‍🏫</span>
+                    <div>
+                        <h3>Preguntas frecuentes</h3>
+                        <p>
+                            Estrategias y recursos
+                        </p>
+                    </div>
+                    <strong>↗</strong>
+                </a>
+
+
+               <div class="resource-card video-card">
+
+    <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/itx0RYOnoBs"
+            title="Introducción al Web Lab"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="video-info">
+        <span>▶️</span>
+
+        <div>
+            <h3>Introducción al Web Lab</h3>
+            <p>
+                Video para estudiantes
+            </p>
+        </div>
+    </div>
+
+</div>
+
+                <a
+                    href="https://www.youtube.com/watch?v=q7d_JtyCq1A"
+                    target="_blank"
+                    class="resource-card"
+                >
+                    <span>🤝</span>
+                    <div>
+                        <h3>Programación en parejas</h3>
+                        <p>
+                            Trabajar y aprender colaborativamente
+                        </p>
+                    </div>
+                    <strong>↗</strong>
+                </a>
+
+
+                <a
+                    href="https://www.youtube.com/watch?v=itx0RYOnoBs"
+                    target="_blank"
+                    class="resource-card"
+                >
+                    <span>🎬</span>
+                    <div>
+                        <h3>Introducción al Web Lab</h3>
+                        <p>
+                            Primer acercamiento al laboratorio
+                        </p>
+                    </div>
+                    <strong>↗</strong>
+                </a>
+
+
+                <a
+                    href="https://studio.code.org/us/es/docs/ide/weblab/expressions/html"
+                    target="_blank"
+                    class="resource-card"
+                >
+                    <span>📖</span>
+                    <div>
+                        <h3>Documentación HTML</h3>
+                        <p>
+                            Consultar etiquetas y expresiones
+                        </p>
+                    </div>
+                    <strong>↗</strong>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CÓDIGO
+        ========================== -->
+
+        <section class="code-section">
+
+            <div class="code-section-content">
+
+                <div class="section-label">
+                    05 · NUESTRO LENGUAJE
+                </div>
+
+                <h2>
+                    Pequeñas etiquetas.<br>
+                    Grandes posibilidades.
+                </h2>
+
+                <p>
+                    Cada etiqueta nos ayuda a darle significado
+                    y estructura a nuestro contenido.
+                </p>
+
+            </div>
+
+
+            <div class="tag-cloud">
+
+                <span>&lt;html&gt;</span>
+                <span>&lt;head&gt;</span>
+                <span>&lt;body&gt;</span>
+                <span>&lt;h1&gt;</span>
+                <span>&lt;p&gt;</span>
+                <span>&lt;ul&gt;</span>
+                <span>&lt;ol&gt;</span>
+                <span>&lt;li&gt;</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROYECTO FINAL
+        ========================== -->
+
+        <section id="proyecto" class="section final-project">
+
+            <div class="project-box">
+
+                <div>
+
+                    <span class="section-label">
+                        DESAFÍO
+                    </span>
+
+                    <h2>
+                        Tu primera<br>
+                        página web.
+                    </h2>
+
+                    <p>
+                        Diseñá una página para un usuario real o imaginario.
+                        Pensá qué necesita, qué información querés comunicar
+                        y cómo podés organizarla.
+                    </p>
+
+                </div>
+
+                <div class="project-steps">
+
+                    <div>
+                        <span>01</span>
+                        <p>Definir</p>
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        <p>Diseñar</p>
+                    </div>
+
+                    <div>
+                        <span>03</span>
+                        <p>Crear</p>
+                    </div>
+
+                    <div>
+                        <span>04</span>
+                        <p>Reflexionar</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            <span>&lt;/&gt;</span>
+            ENOF · SEDE CABILDO
+        </div>
+
+        <p>
+            Curso de Diseño Web · HTML · CSS · JavaScript
+        </p>
+
+        <p class="footer-small">
+            Aprender código también es aprender a crear.
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         MODAL DE CLASE
+    ========================== -->
+
+    <div id="classModal" class="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                onclick="cerrarModal()"
+            >
+                ×
+            </button>
+
+            <div id="modalContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+  
+
+</body>
+</html>
