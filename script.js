@@ -312,7 +312,7 @@ const clases = {
                 url: "https://videos.code.org/levelbuilder/weblab_usingastylesheet-mp4.mp4"
             }
         ]
-    }
+    },
 
     // ------------------------------------------
     // CLASE 7
