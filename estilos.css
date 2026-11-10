@@ -1223,145 +1223,163 @@ footer p {
 }
 
 
-/* ==============================
-   RECURSOS DE DISEÑO WEB
-============================== */
 
-.recursos-web {
-  margin: 40px auto;
-  padding: 25px;
-  max-width: 1100px;
+/* =========================================
+   RECURSOS DESPLEGABLES: DIV Y FLEXBOX
+========================================= */
+
+.resource-card.resource-guide {
+    display: block;
+    padding: 25px;
+    background: #25223e;
+    border: 1px solid #35314f;
+    border-radius: 18px;
+    color: white;
+    transition: .25s;
 }
 
-.recursos-web h2 {
-  margin-bottom: 10px;
+.resource-guide summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+    list-style: none;
 }
 
-.recursos-intro {
-  margin-bottom: 25px;
-  color: #666;
+.resource-guide summary::-webkit-details-marker {
+    display: none;
 }
 
-.recursos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+.resource-guide summary > span:first-child {
+    font-size: 32px;
 }
 
-.recurso-card {
-  background: #ffffff;
-  border: 1px solid #dddddd;
-  border-radius: 14px;
-  padding: 20px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+.resource-guide h3 {
+    font-size: 20px;
+    color: white;
 }
 
-.recurso-card summary {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  cursor: pointer;
-  list-style: none;
+.resource-guide summary p {
+    color: #bcb8cf;
+    font-size: 14px;
+    margin: 0;
 }
 
-.recurso-card summary::-webkit-details-marker {
-  display: none;
+.resource-guide .resource-action {
+    color: var(--yellow);
+    font-weight: 800;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
-.recurso-icono {
-  font-size: 32px;
+.resource-guide[open] {
+    border-color: var(--yellow);
 }
 
-.recurso-titulo {
-  font-size: 19px;
-  font-weight: bold;
-  color: #252525;
+.resource-guide[open] .resource-action::after {
+    content: " ↑";
 }
 
-.recurso-descripcion {
-  color: #666666;
-  line-height: 1.5;
+.resource-guide:not([open]) .resource-action::after {
+    content: " ↓";
 }
 
-.recurso-boton {
-  display: inline-block;
-  width: fit-content;
-  margin-top: 8px;
-  padding: 9px 16px;
-  border-radius: 20px;
-  background: #c9ff35;
-  color: #222222;
-  font-weight: bold;
+.resource-guide .resource-content {
+    border-top: 1px solid #45415f;
+    margin-top: 22px;
+    padding-top: 20px;
+    color: #e8e5f5;
+    line-height: 1.7;
 }
 
-.recurso-card[open] .recurso-boton {
-  background: #222222;
-  color: white;
+.resource-guide .resource-content h4 {
+    color: var(--yellow);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 19px;
+    margin: 22px 0 10px;
 }
 
-.recurso-contenido {
-  margin-top: 25px;
-  padding-top: 20px;
-  border-top: 1px solid #dddddd;
-  line-height: 1.6;
+.resource-guide .resource-content p {
+    color: #d3d0e4;
+    margin-bottom: 15px;
 }
 
-.recurso-contenido h3 {
-  margin-top: 22px;
-  margin-bottom: 10px;
+.resource-guide .resource-content ul {
+    padding-left: 22px;
+    margin-bottom: 18px;
 }
 
-.recurso-contenido pre {
-  overflow-x: auto;
-  padding: 15px;
-  border-radius: 8px;
-  background: #222222;
-  color: #c9ff35;
-  font-size: 14px;
-  line-height: 1.5;
+.resource-guide .resource-content li {
+    margin-bottom: 7px;
 }
 
-.recurso-contenido code {
-  font-family: monospace;
+.resource-guide .resource-content pre {
+    background: #17152b;
+    color: var(--cyan);
+    border: 1px solid #45415f;
+    border-radius: 12px;
+    padding: 18px;
+    margin: 15px 0;
+    font-size: 13px;
+    line-height: 1.6;
+    white-space: pre;
+    overflow-x: auto;
 }
 
-.recurso-contenido p code,
-.recurso-contenido li code {
-  background: #eeeeee;
-  color: #333333;
-  padding: 2px 5px;
-  border-radius: 4px;
+.resource-guide .resource-content code {
+    font-family: "Courier New", monospace;
 }
 
-.tabla-responsive {
-  overflow-x: auto;
+.resource-guide .resource-content p code,
+.resource-guide .resource-content li code {
+    background: #45415f;
+    color: var(--yellow);
+    padding: 2px 5px;
+    border-radius: 4px;
 }
 
-.tabla-responsive table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 15px 0;
+.resource-guide .resource-challenge {
+    background: rgba(255, 228, 92, .10);
+    border-left: 4px solid var(--yellow);
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 25px;
 }
 
-.tabla-responsive th,
-.tabla-responsive td {
-  border: 1px solid #dddddd;
-  padding: 10px;
-  text-align: left;
+.resource-guide .resource-challenge strong {
+    color: var(--yellow);
 }
 
-.tabla-responsive th {
-  background: #eeeeee;
+.resource-guide .resource-challenge p {
+    margin: 8px 0 0;
+    color: #e8e5f5;
 }
 
-.recurso-desafio {
-  margin-top: 25px;
-  padding: 15px;
-  background: #f3f8e8;
-  border-left: 4px solid #9bc900;
-  border-radius: 6px;
+.resource-guide .resource-table {
+    overflow-x: auto;
+    margin: 15px 0;
 }
 
-.recurso-desafio p {
-  margin-bottom: 0;
+.resource-guide .resource-table table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 400px;
 }
+
+.resource-guide .resource-table th,
+.resource-guide .resource-table td {
+    border: 1px solid #45415f;
+    padding: 10px;
+    text-align: left;
+}
+
+.resource-guide .resource-table th {
+    background: #35314f;
+    color: var(--yellow);
+}
+
+.resource-guide .resource-table td {
+    color: #e8e5f5;
+}
+
