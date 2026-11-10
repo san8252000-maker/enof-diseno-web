@@ -313,8 +313,310 @@ const clases = {
             }
         ]
     }
+};
+    // ------------------------------------------
+    // CLASE 7
+    // ------------------------------------------
+
+    7: {
+        titulo: "Clase 7 · Propiedad intelectual y Creative Commons",
+        icono: "©️",
+
+        pregunta:
+            "¿Qué reglas protegen los derechos de todos cuando utilizamos contenidos creados por otras personas?",
+
+        objetivos: [
+            "Comprender el propósito del copyright y la protección de las obras.",
+            "Reconocer que las personas creadoras tienen derechos sobre sus producciones.",
+            "Identificar diferentes licencias Creative Commons.",
+            "Comprender la importancia de atribuir correctamente una obra.",
+            "Seleccionar contenidos que podamos utilizar respetando sus condiciones."
+        ],
+
+        conceptos: [
+            {
+                nombre: "Copyright",
+                descripcion: "Protección legal de los derechos de autor sobre una obra."
+            },
+            {
+                nombre: "Autoría",
+                descripcion: "Reconocimiento de la persona que creó una obra."
+            },
+            {
+                nombre: "Creative Commons",
+                descripcion: "Sistema de licencias que permite compartir obras bajo determinadas condiciones."
+            },
+            {
+                nombre: "Atribución",
+                descripcion: "Reconocer y mencionar a quien creó el contenido que utilizamos."
+            }
+        ],
+
+        actividades: [
+            "🔎 Explorar situaciones de uso de imágenes y otros contenidos en Internet.",
+            "💬 Conversar sobre los derechos de las personas creadoras.",
+            "©️ Reconocer diferentes licencias Creative Commons.",
+            "🧩 Comparar qué usos permite cada licencia.",
+            "🖼️ Buscar imágenes y revisar las condiciones de utilización.",
+            "📝 Registrar cómo atribuir correctamente una obra."
+        ],
+
+        vocabulario: [
+            "Copyright",
+            "Derechos de autor",
+            "Autoría",
+            "Creative Commons",
+            "Licencia",
+            "Atribución"
+        ]
+    },
+
+    // ------------------------------------------
+    // CLASE 8
+    // ------------------------------------------
+
+    8: {
+        titulo: "Clase 8 · Agregar imágenes a una página web",
+        icono: "🖼️",
+
+        pregunta:
+            "¿Cómo podemos agregar imágenes a nuestros sitios web respetando los derechos de todas las personas?",
+
+        objetivos: [
+            "Incorporar imágenes en una página web utilizando HTML.",
+            "Reconocer que la etiqueta img es una etiqueta autocerrada.",
+            "Comprender la función de los atributos src y alt.",
+            "Describir las imágenes mediante textos alternativos.",
+            "Respetar los derechos de autor y atribuir correctamente las imágenes."
+        ],
+
+        etiquetas: [
+            "&lt;img&gt;"
+        ],
+
+        conceptos: [
+            {
+                nombre: "Imagen",
+                descripcion: "Recurso visual que podemos incorporar al contenido de una página web."
+            },
+            {
+                nombre: "Etiqueta autocerrada",
+                descripcion: "Etiqueta que no necesita una etiqueta de cierre."
+            },
+            {
+                nombre: "src",
+                descripcion: "Atributo que indica la ubicación o el nombre del archivo de imagen."
+            },
+            {
+                nombre: "alt",
+                descripcion: "Texto alternativo que describe la imagen."
+            },
+            {
+                nombre: "Atribución",
+                descripcion: "Reconocimiento de la autoría y la licencia de la imagen utilizada."
+            }
+        ],
+
+        codigo: [
+            "&lt;img src=\"imagen.jpg\" alt=\"Descripción de la imagen\"&gt;"
+        ],
+
+        actividades: [
+            "🖼️ Explorar los archivos de imágenes disponibles en Web Lab.",
+            "💻 Incorporar imágenes a una página utilizando la etiqueta img.",
+            "🔍 Identificar la función de los atributos src y alt.",
+            "✏️ Escribir textos alternativos que describan las imágenes.",
+            "©️ Revisar las licencias y atribuciones de las imágenes seleccionadas.",
+            "🐛 Detectar y corregir errores en la escritura de la etiqueta."
+        ],
+
+        vocabulario: [
+            "Imagen",
+            "Etiqueta autocerrada",
+            "Atributo",
+            "src",
+            "alt",
+            "Texto alternativo",
+            "Copyright",
+            "Atribución"
+        ]
+    },
+
+    // ------------------------------------------
+    // CLASE 9
+    // ------------------------------------------
+
+    9: {
+        titulo: "Clase 9 · Estilos para imágenes y diseños",
+        icono: "🎨",
+
+        pregunta:
+            "¿Cómo podemos aplicar estilos a las imágenes y a la distribución de los elementos de una página web?",
+
+        objetivos: [
+            "Crear reglas CSS para modificar el aspecto de una página web.",
+            "Comprender cómo una regla aplicada al body puede afectar a los elementos de la página.",
+            "Utilizar propiedades CSS para modificar tamaños, márgenes, bordes y posiciones.",
+            "Incorporar hipervínculos mediante la etiqueta a.",
+            "Reconocer diferentes formas de abrir un enlace.",
+            "Explorar el uso de imágenes como enlaces."
+        ],
+
+        etiquetas: [
+            "&lt;body&gt;",
+            "&lt;a&gt;"
+        ],
+
+        propiedades: [
+            "background-color",
+            "border-color",
+            "border-radius",
+            "border-style",
+            "border-width",
+            "float",
+            "height",
+            "margin",
+            "width"
+        ],
+
+        codigo: [
+            "background-color: value;",
+            "width: value;",
+            "height: value;",
+            "margin: value;",
+            "border: value;",
+            "&lt;a href=\"https://ejemplo.com\"&gt;Visitar sitio&lt;/a&gt;",
+            "&lt;a href=\"https://ejemplo.com\" target=\"_blank\"&gt;Abrir en otra pestaña&lt;/a&gt;",
+            "&lt;a href=\"https://ejemplo.com\"&gt;&lt;img src=\"imagen.jpg\" alt=\"Descripción\"&gt;&lt;/a&gt;"
+        ],
+
+        conceptos: [
+            {
+                nombre: "Regla CSS",
+                descripcion: "Conjunto formado por un selector y las declaraciones que definen el estilo."
+            },
+            {
+                nombre: "body",
+                descripcion: "Selector que permite aplicar estilos al cuerpo del documento HTML."
+            },
+            {
+                nombre: "Hipervínculo",
+                descripcion: "Enlace que permite navegar hacia otra página o recurso."
+            },
+            {
+                nombre: "href",
+                descripcion: "Atributo que indica el destino de un enlace."
+            },
+            {
+                nombre: "target",
+                descripcion: "Atributo que permite definir dónde se abre un enlace."
+            },
+            {
+                nombre: "Google Fonts",
+                descripcion: "Servicio que permite incorporar familias tipográficas a un sitio web."
+            }
+        ],
+
+        actividades: [
+            "🎨 Crear reglas CSS para modificar el fondo y la apariencia de la página.",
+            "📐 Experimentar con width y height para cambiar el tamaño de las imágenes.",
+            "🔲 Aplicar bordes, colores, redondeados y márgenes.",
+            "↔️ Explorar la propiedad float para modificar la distribución de los elementos.",
+            "🔗 Crear hipervínculos con la etiqueta a.",
+            "🧭 Comparar enlaces que se abren en la misma pestaña y en una nueva pestaña.",
+            "🖼️ Convertir una imagen en un enlace.",
+            "🔤 Explorar familias tipográficas mediante Google Fonts."
+        ],
+
+        vocabulario: [
+            "CSS",
+            "Regla CSS",
+            "Selector",
+            "Propiedad",
+            "Valor",
+            "Hipervínculo",
+            "href",
+            "target",
+            "Google Fonts",
+            "Diseño web"
+        ]
+    },
+
+    // ------------------------------------------
+    // CLASE 10
+    // ------------------------------------------
+
+    10: {
+        titulo: "Clase 10 · Miniproyecto: Diseñamos para un usuario",
+        icono: "🚀",
+
+        pregunta:
+            "¿Cómo podemos utilizar CSS para diseñar una página web teniendo en cuenta las necesidades de un usuario?",
+
+        objetivos: [
+            "Diseñar una página web considerando las necesidades de un usuario.",
+            "Aplicar propiedades CSS para mejorar la presentación visual.",
+            "Integrar imágenes y estilos en una página web.",
+            "Organizar el código de manera clara y legible.",
+            "Probar, revisar y mejorar el diseño a partir de comentarios."
+        ],
+
+        etapas: [
+            {
+                nombre: "Definir",
+                descripcion: "Identificar al usuario y reconocer qué necesita comunicar o encontrar en la página."
+            },
+            {
+                nombre: "Planificar",
+                descripcion: "Pensar la organización del contenido, las imágenes y los estilos que se van a utilizar."
+            },
+            {
+                nombre: "Diseñar",
+                descripcion: "Elegir colores, tipografías, tamaños y distribución de los elementos."
+            },
+            {
+                nombre: "Desarrollar",
+                descripcion: "Construir y dar estilo a la página utilizando HTML y CSS."
+            },
+            {
+                nombre: "Revisar",
+                descripcion: "Probar la página, detectar errores y recibir comentarios de otros compañeros."
+            },
+            {
+                nombre: "Reflexionar",
+                descripcion: "Reconocer los aprendizajes y pensar posibles mejoras."
+            }
+        ],
+
+        proceso: [
+            "👤 Pensar en el usuario",
+            "📝 Identificar sus necesidades",
+            "🗺️ Planificar la página",
+            "🎨 Diseñar los estilos",
+            "💻 Programar con HTML y CSS",
+            "🖼️ Incorporar imágenes",
+            "🐛 Probar y corregir errores",
+            "👥 Compartir y recibir comentarios",
+            "🔄 Mejorar el diseño",
+            "💭 Reflexionar sobre el proceso"
+        ],
+
+        vocabulario: [
+            "Usuario",
+            "Necesidades del usuario",
+            "Diseño web",
+            "HTML",
+            "CSS",
+            "Imagen",
+            "Estilo",
+            "Debugging",
+            "Revisión por pares",
+            "Proceso de diseño"
+        ]
+    }
 
 };
+
 
 
 // ==========================================
