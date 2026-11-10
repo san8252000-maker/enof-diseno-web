@@ -706,191 +706,46 @@
                     <strong>↗</strong>
                 </a>
 
+<section id="recursos" class="section resources-section">
+
+    <div class="section-heading">
+        <div>
+            <div class="section-label">
+                04 · CAJA DE HERRAMIENTAS
             </div>
-
-        </section>
-
-
-<!-- RECURSO: DIV -->
-<details class="resource-card resource-guide">
-    <summary>
-        <span>📦</span>
-        <h3>Contenedores HTML: div</h3>
-        <p>Aprendé a agrupar y organizar elementos de una página web.</p>
-        <span class="resource-action">Ver explicación</span>
-    </summary>
-
-    <div class="resource-content">
-        <h4>¿Qué es la etiqueta div?</h4>
-
-        <p>
-            La etiqueta <code>&lt;div&gt;</code> significa división o sección.
-            Es un contenedor que permite agrupar diferentes elementos HTML,
-            como títulos, párrafos, imágenes y otros contenidos.
-        </p>
-
-        <p>
-            Por sí sola, la etiqueta div no modifica la apariencia de la página.
-            Su utilidad es organizar el contenido y permitir aplicar estilos
-            mediante CSS.
-        </p>
-
-        <h4>¿Para qué sirve?</h4>
-        <ul>
-            <li>Agrupar elementos relacionados.</li>
-            <li>Organizar el contenido de una página.</li>
-            <li>Aplicar estilos a varios elementos al mismo tiempo.</li>
-            <li>Crear secciones para el diseño web.</li>
-        </ul>
-
-        <h4>Ejemplo en HTML</h4>
-        <pre><code>&lt;div class="ciudad"&gt;
-  &lt;h2&gt;La Boca&lt;/h2&gt;
-  &lt;p&gt;Un barrio lleno de arte y color.&lt;/p&gt;
-  &lt;img src="caminito.jpg"&gt;
-&lt;/div&gt;</code></pre>
-
-        <h4>Un ejemplo con CSS</h4>
-        <pre><code>.ciudad {
-  background-color: lightblue;
-  padding: 20px;
-  border: 2px solid blue;
-}</code></pre>
-
-        <h4>¿Qué tenemos que recordar?</h4>
-        <ul>
-            <li>Es un contenedor de elementos HTML.</li>
-            <li>Por defecto ocupa todo el ancho disponible.</li>
-            <li>Comienza en una nueva línea.</li>
-            <li>Podemos identificarlo mediante una clase o un ID.</li>
-        </ul>
-
-        <div class="resource-challenge">
-            <strong>🎯 Mini desafío</strong>
-            <p>
-                Creá tres contenedores div para presentar tres lugares
-                de Buenos Aires. Cada uno debe tener un título,
-                una descripción y una imagen.
-            </p>
+            <h2>Recursos</h2>
         </div>
+
+        <p>
+            Materiales para aprender, consultar,
+            practicar y crear.
+        </p>
     </div>
-</details>
+
+    <div class="resources-grid">
+
+        <!-- ACÁ CONSERVÁS TODOS TUS RECURSOS ACTUALES -->
+        <!-- PRUEBA, PREGUNTAS FRECUENTES, VIDEOS, DOCUMENTACIÓN, ETC. -->
 
 
-<!-- RECURSO: FLEXBOX -->
-<details class="resource-card resource-guide">
-    <summary>
-        <span>🧩</span>
-        <h3>Flexbox: organizar elementos</h3>
-        <p>Descubrí cómo alinear, distribuir y ordenar elementos utilizando CSS.</p>
-        <span class="resource-action">Ver explicación</span>
-    </summary>
+        <!-- RECURSO: DIV -->
+        <details class="resource-card resource-guide">
+            <!-- PEGAR AQUÍ TODO EL CONTENIDO
+                 DE LA TARJETA DIV QUE YA TENÉS -->
+        </details>
 
-    <div class="resource-content">
-        <h4>¿Qué es Flexbox?</h4>
 
-        <p>
-            Flexbox es una herramienta de CSS que permite organizar
-            elementos dentro de un contenedor de manera flexible.
-            Nos ayuda a alinearlos, distribuir el espacio disponible
-            y cambiar su orden.
-        </p>
+        <!-- RECURSO: FLEXBOX -->
+        <details class="resource-card resource-guide">
+            <!-- PEGAR AQUÍ TODO EL CONTENIDO
+                 DE LA TARJETA FLEXBOX QUE YA TENÉS -->
+        </details>
 
-        <h4>¿Cómo se activa?</h4>
-
-        <p>Primero, seleccionamos el contenedor y escribimos:</p>
-
-        <pre><code>.container {
-  display: flex;
-}</code></pre>
-
-        <h4>Propiedades principales</h4>
-
-        <div class="resource-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Propiedad</th>
-                        <th>¿Para qué sirve?</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>display: flex</code></td>
-                        <td>Activa Flexbox.</td>
-                    </tr>
-                    <tr>
-                        <td><code>flex-direction</code></td>
-                        <td>Define la dirección de los elementos.</td>
-                    </tr>
-                    <tr>
-                        <td><code>flex-wrap</code></td>
-                        <td>Permite que los elementos pasen a otra línea.</td>
-                    </tr>
-                    <tr>
-                        <td><code>justify-content</code></td>
-                        <td>Distribuye los elementos sobre el eje principal.</td>
-                    </tr>
-                    <tr>
-                        <td><code>align-items</code></td>
-                        <td>Alinea los elementos sobre el eje transversal.</td>
-                    </tr>
-                    <tr>
-                        <td><code>align-content</code></td>
-                        <td>Distribuye las líneas cuando hay varias filas o columnas.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <h4>Ejemplo 1: organizar en una fila</h4>
-
-        <pre><code>.container {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  justify-content: center;
-}</code></pre>
-
-        <p>
-            Los elementos se organizan en una fila invertida,
-            pueden pasar a otra línea y se ubican en el centro.
-        </p>
-
-        <h4>Ejemplo 2: organizar en una columna</h4>
-
-        <pre><code>.container {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: center;
-}</code></pre>
-
-        <p>
-            Cuando usamos <code>flex-direction: column</code>,
-            el eje principal pasa a ser vertical.
-            Por eso, <code>justify-content</code> controla la distribución
-            vertical y <code>align-items</code> la alineación horizontal.
-        </p>
-
-        <p>
-            También podemos utilizar <code>stretch</code> para estirar
-            los elementos y ocupar el espacio disponible cuando
-            no tienen una altura definida.
-        </p>
-
-        <div class="resource-challenge">
-            <strong>🎯 Mini desafío</strong>
-            <p>
-                Creá una galería con cuatro imágenes. Utilizá Flexbox
-                para organizarlas en una fila, centrarlas y permitir
-                que pasen a otra línea cuando no haya espacio suficiente.
-            </p>
-        </div>
     </div>
-</details>
+
+</section>
+
+        
 
 
 
