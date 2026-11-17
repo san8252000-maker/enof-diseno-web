@@ -1409,3 +1409,16 @@ footer p {
     box-sizing: border-box;
 }
 
+/* ENLACES DEL KIT Y NAVEGACIÓN */
+
+.resource-guide .resource-content a {
+    color: var(--yellow);
+    text-decoration: underline;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.resource-guide summary {
+    cursor: pointer;
+}
