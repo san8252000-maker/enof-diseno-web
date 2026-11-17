@@ -573,7 +573,7 @@
      RECURSOS
 ========================== -->
 
-<section id="recursos" class="section resources-section">
+<section id="recurso" class="section resources-section">
 
     <div class="section-heading">
 
@@ -582,12 +582,12 @@
                 04 · CAJA DE HERRAMIENTAS
             </div>
 
-            <h2>Recursos</h2>
+            <h2>Kit de herramientas</h2>
         </div>
 
         <p>
-            Materiales para aprender, consultar,
-            practicar y crear.
+            Guías prácticas para mejorar, personalizar
+    y compartir tu página web..
         </p>
 
     </div>
@@ -674,37 +674,326 @@
         </a>
 
         <!-- RECURSO: DIV -->
-        <a>
-        <details class="resource-card resource-guide">
+       <details class="resource-card resource-guide">
+    <summary>
+        <span>📦</span>
+        <h3>DIV · Organizar el contenido</h3>
+        <p>Aprendé a crear contenedores para agrupar elementos.</p>
+        <span class="resource-action">Ver tutorial</span>
+    </summary>
 
-            <!-- PEGÁ AQUÍ EL CONTENIDO COMPLETO
-                 DE LA TARJETA DIV -->
-            <div>
+    <div class="resource-content">
+        <h4>¿Para qué sirve?</h4>
+        <p>
+            La etiqueta <code>&lt;div&gt;</code> permite agrupar
+            diferentes elementos de una página. Es como crear
+            una caja para organizar textos, imágenes y otros contenidos.
+        </p>
 
-            </div>
+        <h4>¿Cómo se utiliza?</h4>
+        <pre><code>&lt;div&gt;
+    &lt;h2&gt;Mi sección&lt;/h2&gt;
+    &lt;p&gt;Este es mi contenido.&lt;/p&gt;
+    &lt;img src="imagen.jpg"&gt;
+&lt;/div&gt;</code></pre>
 
-        </details>
+        <p>Todo lo que está dentro del DIV forma parte del mismo contenedor.</p>
+
+        <div class="resource-challenge">
+            <strong>¡Probalo en tu web!</strong>
+            <p>
+                Creá un DIV que agrupe un título, un párrafo
+                y una imagen sobre el tema de tu página.
+            </p>
+        </div>
+    </div>
+</details>
+
+
+<!-- 2. CLASS -->
+<details class="resource-card resource-guide">
+    <summary>
+        <span>🏷️</span>
+        <h3>CLASS · Identificar elementos</h3>
+        <p>Aplicá los mismos estilos a diferentes elementos.</p>
+        <span class="resource-action">Ver tutorial</span>
+    </summary>
+
+    <div class="resource-content">
+        <h4>¿Para qué sirve?</h4>
+        <p>
+            Una clase permite identificar uno o varios elementos
+            HTML para darles un mismo estilo desde CSS.
+        </p>
+
+        <h4>¿Cómo se utiliza en HTML?</h4>
+        <pre><code>&lt;h2 class="destacado"&gt;Mi título&lt;/h2&gt;
+
+&lt;p class="destacado"&gt;
+    Este texto también está destacado.
+&lt;/p&gt;</code></pre>
+
+        <h4>¿Cómo se aplica en CSS?</h4>
+        <p>
+            Para seleccionar una clase usamos un punto
+            antes de su nombre:
+        </p>
+
+        <pre><code>.destacado {
+    color: #c9ff35;
+    font-size: 24px;
+    font-weight: bold;
+}</code></pre>
+
+        <p>
+            ¡Todos los elementos que tengan
+            <code>class="destacado"</code> recibirán ese estilo!
+        </p>
+
+        <div class="resource-challenge">
+            <strong>¡Probalo en tu web!</strong>
+            <p>
+                Creá una clase llamada <code>mi-estilo</code>
+                y aplicala a dos títulos o párrafos diferentes.
+            </p>
+        </div>
+    </div>
+</details>
+
+
+<!-- 3. FLEXBOX -->
+<details class="resource-card resource-guide">
+    <summary>
+        <span>↔️</span>
+        <h3>FLEXBOX · Acomodar elementos</h3>
+        <p>Organizá contenidos en filas y columnas.</p>
+        <span class="resource-action">Ver tutorial</span>
+    </summary>
+
+    <div class="resource-content">
+        <h4>¿Para qué sirve?</h4>
+        <p>
+            Flexbox es una herramienta de CSS que permite
+            organizar y alinear elementos dentro de un contenedor.
+        </p>
+
+        <h4>Primero, creamos un contenedor:</h4>
+        <pre><code>&lt;div class="contenedor"&gt;
+    &lt;div&gt;Elemento 1&lt;/div&gt;
+    &lt;div&gt;Elemento 2&lt;/div&gt;
+    &lt;div&gt;Elemento 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <h4>Después, usamos CSS:</h4>
+        <pre><code>.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}</code></pre>
+
+        <p>
+            <code>display: flex</code> activa Flexbox.
+            <code>flex-direction</code> define la dirección.
+            <code>justify-content</code> distribuye el espacio.
+            <code>align-items</code> alinea los elementos.
+            <code>gap</code> establece la separación.
+        </p>
+
+        <h4>¿Y si quiero una columna?</h4>
+        <pre><code>.contenedor {
+    display: flex;
+    flex-direction: column;
+}</code></pre>
+
+        <div class="resource-challenge">
+            <strong>¡Probalo en tu web!</strong>
+            <p>
+                Organizá tres imágenes o tarjetas en una fila.
+                Después probá cambiar la dirección a columna.
+            </p>
+        </div>
+    </div>
+</details>
+
+
+<!-- 4. VIDEOS -->
+<details class="resource-card resource-guide">
+    <summary>
+        <span>🎬</span>
+        <h3>VIDEOS · Incorporar contenido multimedia</h3>
+        <p>Agregá videos de YouTube a tu página.</p>
+        <span class="resource-action">Ver tutorial</span>
+    </summary>
+
+    <div class="resource-content">
+        <h4>¿Cómo incorporar un video?</h4>
+        <ol>
+            <li>Abrí el video en YouTube.</li>
+            <li>Hacé clic en Compartir.</li>
+            <li>Elegí la opción Insertar.</li>
+            <li>Copiá el código HTML que aparece.</li>
+            <li>Pegalo dentro del BODY de tu página.</li>
+        </ol>
+
+        <h4>Ejemplo de código:</h4>
+        <pre><code>&lt;iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/ID_DEL_VIDEO"
+    title="Mi video"
+    allowfullscreen&gt;
+&lt;/iframe&gt;</code></pre>
+
+        <p>
+            Reemplazá <code>ID_DEL_VIDEO</code> por el identificador
+            del video que elegiste. También podés utilizar
+            directamente el código que te proporciona YouTube.
+        </p>
+
+        <div class="resource-challenge">
+            <strong>¡Probalo en tu web!</strong>
+            <p>
+                Incorporá un video relacionado con el tema
+                de tu página y comprobá que se pueda reproducir.
+            </p>
+        </div>
+    </div>
+</details>
+
+
+<!-- 5. GOOGLE FONTS -->
+<details class="resource-card resource-guide">
+    <summary>
+        <span>🔤</span>
+        <h3>GOOGLE FONTS · Elegir tipografías</h3>
+        <p>Personalizá los títulos y textos de tu página.</p>
+        <span class="resource-action">Ver tutorial</span>
+    </summary>
+
+    <div class="resource-content">
+        <h4>¿Para qué sirve?</h4>
+        <p>
+            Google Fonts ofrece tipografías gratuitas que podés
+            incorporar a tu proyecto web.
+        </p>
+
+        <h4>¿Cómo se utiliza?</h4>
+        <ol>
+            <li>
+                Ingresá a
+                <a href="https://fonts.google.com/" target="_blank"
+                   rel="noopener noreferrer">Google Fonts</a>.
+            </li>
+            <li>Buscá una tipografía que te guste.</li>
+            <li>Seleccioná los estilos que quieras utilizar.</li>
+            <li>Copiá el código de inserción que ofrece Google Fonts.</li>
+            <li>Pegalo dentro de la etiqueta HEAD de tu HTML.</li>
+        </ol>
+
+        <h4>Ejemplo en HTML:</h4>
+        <pre><code>&lt;link rel="preconnect"
+href="https://fonts.googleapis.com"&gt;
+
+&lt;link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap"
+rel="stylesheet"&gt;</code></pre>
+
+        <h4>Aplicamos la tipografía en CSS:</h4>
+        <pre><code>h1 {
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}</code></pre>
+
+        <div class="resource-challenge">
+            <strong>¡Probalo en tu web!</strong>
+            <p>
+                Elegí una tipografía para los títulos y otra
+                para los párrafos. Compará cómo cambia el diseño.
+            </p>
+        </div>
+    </div>
+</details>
+
+
+<!-- 6. WEB LAB Y GITHUB -->
+<details class="resource-card resource-guide">
+    <summary>
+        <span>🚀</span>
+        <h3>WEB LAB + GITHUB · Compartir tu web</h3>
+        <p>Guardá tu proyecto y aprendé a publicarlo.</p>
+        <span class="resource-action">Ver tutorial</span>
+    </summary>
+
+    <div class="resource-content">
+        <h4>Parte 1 · Trabajar en Web Lab</h4>
+        <p>
+            Web Lab permite crear y editar los archivos HTML
+            y CSS de tu proyecto.
+        </p>
+        <ul>
+            <li>Revisá que tu archivo principal sea <code>index.html</code>.</li>
+            <li>Organizá los archivos HTML, CSS e imágenes.</li>
+            <li>Guardá los cambios y comprobá la vista previa.</li>
+            <li>Utilizá las opciones de compartir del proyecto para mostrarlo.</li>
+        </ul>
+
+        <p>
+            <a href="https://studio.code.org/docs/ide/weblab2"
+               target="_blank" rel="noopener noreferrer">
+                Consultar la documentación de Web Lab
             </a>
+        </p>
 
-        <!-- RECURSO: FLEXBOX -->
-        <a>
-        <details class="resource-card resource-guide">
+        <h4>Parte 2 · Publicar con GitHub Pages</h4>
+        <p>
+            GitHub Pages permite publicar gratuitamente una página
+            web a partir de los archivos de un repositorio.
+        </p>
+        <ol>
+            <li>Creá una cuenta en GitHub.</li>
+            <li>Creá un repositorio público para tu proyecto.</li>
+            <li>Subí los archivos HTML, CSS e imágenes.</li>
+            <li>Verificá que <code>index.html</code> esté en la carpeta principal.</li>
+            <li>Entrá en Settings y luego en Pages.</li>
+            <li>En Build and deployment, elegí Deploy from a branch.</li>
+            <li>Seleccioná la rama <code>main</code> y la carpeta <code>/(root)</code>.</li>
+            <li>Guardá y esperá a que se publique el sitio.</li>
+        </ol>
 
-            <!-- PEGÁ AQUÍ EL CONTENIDO COMPLETO
-                 DE LA TARJETA FLEXBOX -->
-
-        </details>
+        <p>
+            <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site"
+               target="_blank" rel="noopener noreferrer">
+                Ver la guía oficial de GitHub Pages
             </a>
+        </p>
+
+        <p>
+            <strong>Importante:</strong> los sitios publicados
+            con GitHub Pages son públicos. No subas datos personales,
+            contraseñas ni información privada.
+        </p>
+
+        <div class="resource-challenge">
+            <strong>¡Probalo en tu web!</strong>
+            <p>
+                Prepará tu proyecto para compartirlo. Revisá que
+                todos los archivos estén incluidos y que los enlaces
+                y las imágenes funcionen.
+            </p>
+        </div>
+    </div>
+</details>
+<!-- FIN DEL KIT DE HERRAMIENTAS -->
 
     </div>
 
 </section>
 
-
         
-
-
-
         <!-- =========================
              CÓDIGO
         ========================== -->
