@@ -1379,7 +1379,33 @@ footer p {
     color: var(--yellow);
 }
 
+
 .resource-guide .resource-table td {
     color: #e8e5f5;
+}
+
+/* MEJORAS PARA EL KIT DE HERRAMIENTAS */
+
+.resource-guide {
+    align-self: start;
+}
+
+.resource-guide summary h3 {
+    margin: 0;
+}
+
+.resource-guide .resource-content a {
+    color: var(--yellow);
+    text-decoration: underline;
+}
+
+.resource-guide .resource-content ol {
+    padding-left: 22px;
+    margin-bottom: 18px;
+}
+
+.resource-guide .resource-content pre {
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
