@@ -943,11 +943,7 @@ function mostrarClase(numero) {
 
                     ${clase.recursos
                         .map(recurso => `
-                            <a
-                                href="${recurso.url}"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
+                            <a href="${recurso.url}" target="_blank" rel="noopener noreferrer">
                                 ${recurso.nombre}
                                 <span>↗</span>
                             </a>
