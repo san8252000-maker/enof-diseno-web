@@ -983,6 +983,98 @@ p {
         </div>
     </div>
 </details>
+
+        <!--Sitio web con tu propio dominio -->
+<h4>Parte 3 · Publicar con tu dominio en GitHub Pages</h4>
+        <p>
+            ¿Ya creaste tu página web con HTML Y CSS y la publicaste en GitHub Pages?
+            ¡Ahora podés utilizar tu propio dominio! Por ejemplo, en lugar de compartir:
+       usuario.github.io/mi-pagina
+            podés utilizar:
+            www.misitio.com
+            Para lograrlo, necesitás conectar tu dominio con GitHub Pages mediante una configuración DNS.
+        </p>
+        <ol>
+            <li>Verifica que el dominio sea tuyo</li>
+                <ol>
+                    <li>Ingresa a GitHub.</li>
+                    <li>Hace click en tu foto de perfil y entra a Settings.</li>
+                    <li>En el menu lateral, busca Pages.</li>
+                    <li>En la sección "Verified domains, selecciona "Add a domain".</li>
+                    <li>Escribí tu dominio (por ejemplo, misitio.com)</li>
+                    <li>GitHub te proporcionará los datos de un registro DNS de tipo TXT.</li>
+<p>¡!Importante! Esta verificación se realiza desde la configuración de tu cuenta personal, no desde el repositorio.</p>
+                </ol>
+            <li>AGREGA EL REGISTRO TXT</li>
+            
+        <p>Ingresá al sitio donde compraste o administrás tu dominio (NIC Argentina, DonWeb, GoDaddy, Namecheap, etc.).
+
+Buscá la sección de administración de DNS y agregá un nuevo registro:
+         
+        </p>
+<ul>
+    <li> Tipo: TX</li>
+    <li> Nombre/Host: el que indica GitHub.</li>
+    <li> Valor/Content: el código que proporciona GitHub.</li>
+    <li>TTL: automático o predeterminado.</li>
+</ul>
+        <p>
+            <strong>Importante:</strong> Guarda los cambios, volve a GitHub y presiona Verify cuando el registro este disponible.La propagación DNS puede ser inmediata o demorar hasta 24 hs. No elimines el registro TXT: necesitas conservarlo para mantener la verificación.
+        </p>
+            <li>CONECTA EL DOMINIO CON TU REPOSITORIO</li> 
+<p>Una vez verificado el dominio:</p>
+            <ol>
+                <li>Ingresá al repositorio donde publicaste tu página web.</li>
+
+               <li>Entrá en Settings.</li>
+
+               <li>Seleccioná Pages.</li>
+
+               <li>Buscá el apartado Custom domain.</li>
+
+               <li>Escribí tu dominio y presioná Save.</li>
+            </ol>
+            <p>Por ejemplo: misitio.com</p>
+        <li>Configurá los registros DNS para GitHub Pages</li>
+            <p>Configurá los registros DNS para GitHub Pages
+
+Ahora tenés que indicarle a tu dominio que dirija a los servidores de GitHub.
+
+Si querés utilizar el dominio principal (misitio.com), agregá estos cuatro registros:</p>
+            <ul>
+                <li>Tipo A-Host @ valor 185.199.108.153</li>
+                <li>Tipo A-Host @ valor 185.199.109.153</li>
+                <li>Tipo A-Host @ valor 185.199.110.153</li>
+                <li>Tipo A-Host @ valor 185.199.111.153</li>
+
+            </ul>
+            <p>Si también querés utilizar www.misitio.com, agregá:</p>
+            <p>Tipo CNAME Host www Valor TUUSUARIO.GITHUB.IO</p>
+            <p>Reemplazá TUUSUARIO por tu nombre de usuario de GitHub. No agregues el nombre del repositorio.</p>
+    <li>ACTIVA HTTPS</li>    
+            <p>Cuando GitHub haya reconocido la configuración DNS:</p>
+            <ol>
+               <li> Volvé a tu repositorio.</li>
+
+              <li>Entrá en Settings → Pages.</li>
+
+             <li>Esperá a que aparezca disponible la opción Enforce HTTPS.</li>
+
+             <li>Activala para que tu sitio se pueda visitar mediante una conexión segura.</li>
+            </ol>
+        </ol>
+            <div class="resource-challenge">
+            <strong>Tu página ya esta publciada!</strong>
+            <p>
+                Prepará tu proyecto para compartirlo. Revisá que
+                todos los archivos estén incluidos y que los enlaces
+                y las imágenes funcionen.
+            </p>
+        </div>
+    </div>
+</details>
+
+        
 <!-- FIN DEL KIT DE HERRAMIENTAS -->
 
     </div>
